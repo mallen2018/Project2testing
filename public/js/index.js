@@ -29,14 +29,14 @@ var API = {
     });
   }
 };
-
+ ///***************NEED TO FIX SO $EXAMPLES WLL RETURN THE DATA**** */
 // refreshExamples gets new examples from the db and repopulates the list
 var refreshExamples = function() {
   API.getExamples().then(function(data) {
     var $examples = data.map(function(example) {
       var $a = $("<a>")
-        .text(example.text)
-        .attr("href", "/example/" + example.id);
+        .text(example.text) 
+        .attr("href", "/pickapal/" + example.id);
 
       var $li = $("<li>")
         .attr({

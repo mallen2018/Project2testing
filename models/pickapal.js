@@ -1,7 +1,7 @@
 module.exports = function(sequelize, DataTypes) {
   var Pickapal = sequelize.define("Pickapal", {
   zipcode: DataTypes.INTEGER(5),
-  name: DataTypes.STRING,
+  name: DataTypes.TEXT,
   breed: DataTypes.STRING,
   mix: DataTypes.STRING,
   age: DataTypes.STRING,
@@ -29,3 +29,4 @@ module.exports = function(sequelize, DataTypes) {
 };
 
 //took away } after text it was early close creating duplicate close
+//updated name to .text to try and see if i could connect it to the database

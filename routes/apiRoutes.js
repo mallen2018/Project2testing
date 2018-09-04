@@ -24,6 +24,7 @@ module.exports = function(app) {
     });
   });
 
+
   // Delete an example by id
   app.delete("/api/pickapal/:id", function(req, res) {
     db.Pickapal.destroy({ where: { id: req.params.id } }).then(function(
@@ -33,3 +34,4 @@ module.exports = function(app) {
     });
   });
 };
+
